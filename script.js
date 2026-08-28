@@ -2,7 +2,7 @@ function checkBirthday() {
 
     // Example birthday
     // Change this later to Raphea's actual birthday
-    const correctBirthday = "2000-08-28";
+    const correctBirthday = "2004-08-29";
 
     const enteredBirthday =
         document.getElementById("birthday").value;
@@ -44,9 +44,9 @@ function checkBirthday() {
     } else {
 
         result.innerHTML = `
-            ❌ Hmm... that's not the date I'm looking for.
+            ❌ DI MAO BUANG.
             <br>
-            Try again, birthday girl. ❤️
+            Try again, birthday BB girl. ❤️
         `;
 
     }
