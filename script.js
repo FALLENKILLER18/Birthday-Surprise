@@ -1,7 +1,7 @@
 function checkBirthday() {
 
     // CHANGE THIS LATER TO HER BIRTHDAY
-    const correctBirthday = "2000-08-28";
+    const correctBirthday = "2004-08-29";
 
     // Get the birthday entered by the user
     const enteredBirthday = document.getElementById("birthday").value;
