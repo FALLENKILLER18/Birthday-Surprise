@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +12,86 @@
 
 <body>
 
-    <div class="container">
+    <!-- Birthday Verification -->
+    <div class="container" id="birthdayScreen">
 
-        <h1>🎂 A Little Surprise For You ❤️</h1>
+        <div class="heart">❤️</div>
 
-        <p>Before you continue, I need to ask you something...</p>
+        <h1>A Little Surprise For You</h1>
 
-        <h2>When is your birthday? 🎉</h2>
+        <p>
+            Before you continue, I need to ask you something...
+        </p>
+
+        <h2>When is your birthday? 🎂</h2>
 
         <input type="date" id="birthday">
 
         <br><br>
 
-        <button onclick="checkBirthday()">OK ❤️</button>
+        <button onclick="checkBirthday()">
+            OK ❤️
+        </button>
 
         <p id="result"></p>
 
     </div>
 
+
+    <!-- Birthday Celebration -->
+    <div class="container hidden" id="celebrationScreen">
+
+        <div class="confetti">🎉</div>
+
+        <h1>It's Your Birthday! 🎂</h1>
+
+        <p>
+            Happy Birthday, Raphea Ann! ❤️
+        </p>
+
+        <p>
+            I have a little surprise waiting for you...
+        </p>
+
+        <button onclick="continueToLetter()">
+            CONTINUE 💌
+        </button>
+
+    </div>
+
+
+    <!-- Letter -->
+    <div class="container hidden" id="letterScreen">
+
+        <div class="envelope" onclick="openLetter()">
+            💌
+        </div>
+
+        <h2>There's something I want to tell you...</h2>
+
+        <button onclick="openLetter()">
+            OPEN MY LETTER ❤️
+        </button>
+
+        <div id="letterContent" class="hidden">
+
+            <h1>Dear Raphea Ann ❤️</h1>
+
+            <p>
+                Your special message will go here.
+            </p>
+
+            <p>
+                💕 More surprises are coming...
+            </p>
+
+        </div>
+
+    </div>
+
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
