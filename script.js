@@ -2,7 +2,7 @@ function checkBirthday() {
 
     // Example birthday
     // Change this later to Raphea's actual birthday
-    const correctBirthday = "2004-08-29";
+    const correctBirthday = "2005-08-29";
 
     const enteredBirthday =
         document.getElementById("birthday").value;
@@ -15,7 +15,7 @@ function checkBirthday() {
     if (enteredBirthday === "") {
 
         result.innerHTML =
-            "Please enter your birthday first. ❤️";
+            "Enter your birthday first bebe girl. ❤️";
 
         return;
     }
@@ -44,9 +44,9 @@ function checkBirthday() {
     } else {
 
         result.innerHTML = `
-            ❌ DI MAO BUANG.
+            ❌ PATAY WRONG KA MA BENJOTAN GYUD KA.
             <br>
-            Try again, birthday BB girl. ❤️
+            Try again, BB girl. ❤️
         `;
 
     }
