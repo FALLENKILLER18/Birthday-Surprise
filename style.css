@@ -240,7 +240,8 @@ button:active {
     position: relative; 
  
     z-index: 1; 
- 
+   color: black;
+    
 } 
  
 /* Letter Title */ 
