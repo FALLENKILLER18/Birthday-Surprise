@@ -195,62 +195,64 @@ button:active {
  
 #letterContent { 
  
-    position: relative;
-
+    position: relative; 
+ 
     margin-top: 30px; 
  
     padding: 30px 25px; 
  
-    background-image: url("oupicture/capture.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    background-image: url("oupicture/Capture.PNG"); 
+ 
+    background-size: cover; 
+ 
+    background-position: center; 
+ 
+    background-repeat: no-repeat; 
+ 
     border-radius: 20px; 
  
-    overflow: hidden;
-
+    overflow: hidden; 
+ 
     animation: letterAppear 1s ease; 
 } 
  
-/* Make the picture slightly transparent */
-
-#letterContent::before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: rgba(255, 255, 255, 0.65);
-
-    z-index: 0;
-
-}
-
-
-/* Keep the letter text above the picture */
-
-#letterContent h1,
-#letterContent p {
-
-    position: relative;
-
-    z-index: 1;
-
-}
-
-
-/* Letter Title */
-
+/* Make the picture slightly transparent */ 
+ 
+#letterContent::before { 
+ 
+    content: ""; 
+ 
+    position: absolute; 
+ 
+    inset: 0; 
+ 
+    background: rgba(255, 255, 255, 0.65); 
+ 
+    z-index: 0; 
+ 
+} 
+ 
+/* Keep the letter text above the picture */ 
+ 
+#letterContent h1, 
+#letterContent p { 
+ 
+    position: relative; 
+ 
+    z-index: 1; 
+ 
+} 
+ 
+/* Letter Title */ 
+ 
 #letterContent h1 { 
  
-    font-size: 28px;
-
-    color: #ff4f81;
-
-    text-shadow: none;
+    font-size: 28px; 
+ 
+    color: #ff4f81; 
+ 
+    text-shadow: none; 
+ 
 } 
  
 /* Animations */ 
