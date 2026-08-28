@@ -1,40 +1,80 @@
 function checkBirthday() {
 
-    // CHANGE THIS LATER TO HER BIRTHDAY
-    const correctBirthday = "2004-08-29";
+    // Example birthday
+    // Change this later to Raphea's actual birthday
+    const correctBirthday = "2000-08-28";
 
-    // Get the birthday entered by the user
-    const enteredBirthday = document.getElementById("birthday").value;
+    const enteredBirthday =
+        document.getElementById("birthday").value;
 
-    const result = document.getElementById("result");
+    const result =
+        document.getElementById("result");
 
-    // Check if the birthday is correct
+
+    // Make sure a date was entered
+    if (enteredBirthday === "") {
+
+        result.innerHTML =
+            "Please enter your birthday first. ❤️";
+
+        return;
+    }
+
+
+    // Check the birthday
     if (enteredBirthday === correctBirthday) {
 
-        result.innerHTML = `
-            🎉 It's your birthday! 🎉
-            <br><br>
-            I have a little surprise waiting for you... ❤️
-            <br><br>
-            <button onclick="continueToSurprise()">
-                CONTINUE ❤️
-            </button>
-        `;
+        result.innerHTML =
+            "🎉 Correct! 🎉";
+
+        // Wait a moment before showing celebration
+        setTimeout(function () {
+
+            document
+                .getElementById("birthdayScreen")
+                .classList.add("hidden");
+
+            document
+                .getElementById("celebrationScreen")
+                .classList.remove("hidden");
+
+        }, 1000);
+
 
     } else {
 
         result.innerHTML = `
             ❌ Hmm... that's not the date I'm looking for.
             <br>
-            Try again ❤️
+            Try again, birthday girl. ❤️
         `;
 
     }
 }
 
 
-function continueToSurprise() {
+/* Continue to the letter */
 
-    alert("Our birthday surprise is coming soon! ❤️");
+function continueToLetter() {
+
+    document
+        .getElementById("celebrationScreen")
+        .classList.add("hidden");
+
+    document
+        .getElementById("letterScreen")
+        .classList.remove("hidden");
+
+}
+
+
+/* Open the letter */
+
+function openLetter() {
+
+    const letter =
+        document.getElementById("letterContent");
+
+    letter.classList.remove("hidden");
 
 }
